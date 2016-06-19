@@ -1,26 +1,18 @@
-# Pro-slugs
+# pro-slugs [![Build Status](https://travis-ci.org/edgycircle/pro-slugs.svg)](https://travis-ci.org/edgycircle/pro-slugs)
 
-This README outlines the details of collaborating on this Ember addon.
+pro-slugs is an addon that can be installed with Ember CLI. It gives you the ability to generate good looking and URL safe slugs from a string.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```bash
+cd your-project-directory
+ember install pro-slugs
+```
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```js
+import slug from 'pro-slugs';
 
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+console.log(slug('Your string!'));
+```
